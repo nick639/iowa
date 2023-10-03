@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The State of Iowa</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>The State of Iowa</h1>
+        <p class="subtext">This page contains information on the state of Iowa and various cities within the state.</p><br>
+        <img id="image" alt="Corn Field" src="https://cdn.pixabay.com/photo/2014/09/09/19/07/corn-field-440338_1280.jpg">
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="des-moines.html">Des Moines</a>
+        <a href="iowa-city.html">Iowa City</a>
+        <a href="cedar-rapids.html">Cedar Rapids</a>
+    </nav>
+    <section>
+        <h2>State Information</h2>
+        <p class="subtext">Population: 3,203,345</p>
+        <p class="subtext">Year of Statehood: 1846</p>
+        <p class="subtext">Region: Midwest</p>
+        <p class="subtext">Classification: Rural</p>
+        <p class="subtext">Average income: $65,429</p>
+        
+    </section>
+    <aside>
+        <form id ="form"><strong>Have any questions?</strong><br>
+            <label>First Name</label><br>
+            <input type="text" placeholder="John"><br>
+            <label>Last Name</label><br>
+            <input type="text" placeholder="Doe"><br>
+            <label>Email</label><br>
+            <input id ="email1" type ="email" placeholder="johndoe@email.com"><br>
+            <label>Confirm Email</label><br>
+            <input id ="email2" type="email" placeholder="johndoe@email.com"><br>
+            <label>What is your question?</label><br>
+            <input type="text" placeholder="How is the weather in Iowa?"><br>
+            <input type="submit" onclick="
+            let email1 = document.getElementById('email1');
+            let email2 = document.getElementById('email2');
+            if (email1.value === email2.value) {
+                alert('Message has been sent.');
+            } else {
+                alert('Email does not match confirmation email.');
+            }
+            "><br>
+
+        </form>
+        <br>
+        <a href="https://www.iowa.gov/" target="_blank">Find More Information Here</a>
+    </aside>
+    
+</body>
+</html>
